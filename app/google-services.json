@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "243584885567",
+    "firebase_url": "https://safe-gas-8c850-default-rtdb.firebaseio.com",
+    "project_id": "safe-gas-8c850",
+    "storage_bucket": "safe-gas-8c850.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243584885567:android:42816689188d86bedde98a",
+        "android_client_info": {
+          "package_name": "com.example.savegas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf3KY0VkHSoqV5Y9WkDc3CcaZAb4lFQ9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

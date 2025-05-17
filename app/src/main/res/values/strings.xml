@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Safe Gas</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Log In</string>
+    <string name="signup_prompt">Don’t have an account?</string>
+    <string name="signup">Sign up</string>
+    <string name="logout">Logout</string>
+
+    <!-- New Strings for Sign Up Screen -->
+    <string name="create_account">Create your account</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_account">Already have an account?</string>
+
+    <!-- Email Verification Message -->
+    <string name="verification_message">A verification email has been sent. Please verify your email before logging in.</string>
+</resources>

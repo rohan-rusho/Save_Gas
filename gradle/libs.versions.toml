@@ -1,0 +1,27 @@
+[versions]
+androidGradlePlugin = "8.9.0" # Updated
+googleServices = "4.4.2"
+appcompat = "1.7.0"
+material = "1.12.0"
+constraintlayout = "2.1.4"
+firebaseAuth = "23.1.0"
+junit = "4.13.2"
+androidxTestJunit = "1.2.1"
+espressoCore = "3.6.1"
+firebaseDatabase = "21.0.0"
+
+[libraries]
+android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestJunit" }
+androidx-test-espresso = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }

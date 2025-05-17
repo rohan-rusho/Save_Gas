@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo or App Icon -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/app_name" />
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="@font/ffff"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp" />
+
+        <!-- Welcome Message -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:textSize="18sp"
+            android:fontFamily="@font/www"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginTop="8dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/email"
+            android:fontFamily="@font/www"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="26dp" />
+
+        <!-- Password Input with Toggle -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_edittext"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/www"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="48dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/passwordToggle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_eye_off"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Toggle Password Visibility"
+                app:tint="@android:color/darker_gray" />
+        </RelativeLayout>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="@string/login"
+            android:fontFamily="@font/ffff"
+            android:textSize="28sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF" />
+
+        <!-- Forgot Password Link -->
+        <TextView
+            android:id="@+id/forgotPasswordLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:fontFamily="@font/ffff"
+            android:textColor="#6750a4"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DC6750A4"
+            android:layout_marginTop="50dp"/>
+
+        <!-- Sign Up Section -->
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_prompt"
+                android:fontFamily="@font/ffff"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/signupLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:fontFamily="@font/ffff"
+                android:textColor="#6750a4"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+</ScrollView>

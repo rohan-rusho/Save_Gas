@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fontFamily="@font/ffff">
+
+        <!-- Header: Title + Logout Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Safe Gas"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:fontFamily="@font/ffff" />
+
+            <ImageView
+                android:id="@+id/logoutButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_logout"
+                android:contentDescription="@string/logout"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp">
+
+            <TextView
+                android:fontFamily="@font/ffff"
+                android:text="Device"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Switch
+                android:id="@+id/deviceSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:checked="true"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:src="@drawable/science"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                app:tint="#007BFF" />
+
+            <TextView
+                android:id="@+id/leakageStatus"
+                android:fontFamily="@font/www"
+                android:text="No leakage detected"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:elevation="2dp">
+
+            <ProgressBar
+                android:id="@+id/gasProgress"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:indeterminate="false"
+                android:progress="65"
+                android:max="100"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:tint="#007BFF" />
+
+            <TextView
+                android:id="@+id/gasPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-76dp"
+                android:text="65%"
+                android:fontFamily="@font/ffff"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Remaining Gas"
+                android:fontFamily="@font/ffff"
+                android:layout_marginTop="70dp"
+                android:textSize="26sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:elevation="2dp">
+
+            <ImageView
+                android:src="@drawable/stat_sys_wifi_signal_4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                app:tint="#007BFF" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Connection"
+                    android:fontFamily="@font/ffff"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/connectionStatus"
+                    android:text="Connected to device"
+                    android:fontFamily="@font/www"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:elevation="2dp">
+
+            <ImageView
+                android:src="@drawable/warn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="12dp"
+                app:tint="#007BFF" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Alerts"
+                    android:fontFamily="@font/ffff"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/alertsText"
+                    android:text="No recent alerts"
+                    android:fontFamily="@font/www"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/cutGasButton"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cut Gas Supply"
+                android:fontFamily="@font/www"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="6dp"/>
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Reset System"
+                android:fontFamily="@font/www"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="6dp"/>
+
+            <Button
+                android:id="@+id/emergencyButton"
+                android:layout_weight="1"
+                android:fontFamily="@font/www"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Contact Emergency"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
